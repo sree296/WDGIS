@@ -1,0 +1,40 @@
+nav, .page-footer{
+    padding:0 25px;
+}
+.form-container{
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.card-action{
+    text-align: right;
+}
+.scan-type-content label{
+    margin-right: 20px;
+}
+.ip-content{
+    margin-top: 3rem;
+}
+.ip-content .input-field{
+    margin-top: 0.5rem;
+}
+.ip-content .input-field-row{
+    margin-bottom: 0px;
+}
+.ip-content p{
+    width:50%;
+    text-align: center;
+    font-weight: 600;
+}
+
+blockquote {
+    font-size: 1.5rem;
+}
+.file-upload-wrapper{
+    margin-bottom: 0px;
+}
+
+mat-card {
+    width: 50%;
+    margin-left: 350px;    
+}

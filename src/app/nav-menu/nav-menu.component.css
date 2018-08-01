@@ -1,0 +1,67 @@
+/*!
+ * Materialize v1.0.0-rc.2 (http://materializecss.com)
+ * Copyright 2014-2017 Materialize
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ */
+ 
+ /*!
+ * Materialize v1.0.0-rc.2 (http://materializecss.com)
+ * Copyright 2014-2017 Materialize
+ * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
+ */
+ body {
+    margin: 0px;
+}
+
+nav, .page-footer{
+    padding:0 25px;
+}
+.form-container{
+    max-width: 650px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.card-action{
+    text-align: right;
+}
+.scan-type-content label{
+    margin-right: 20px;
+}
+.ip-content{
+    margin-top: 3rem;
+}
+.ip-content .input-field{
+    margin-top: 0.5rem;
+}
+.ip-content .input-field-row{
+    margin-bottom: 0px;
+}
+.ip-content p{
+    width:50%;
+    text-align: center;
+    font-weight: 600;
+}
+.page-footer .row{
+    margin-bottom: 0px;
+}
+nav ul li.active {
+  background-color: rgba(0,0,0,0.2);
+}
+nav ul li.active a{
+  font-weight: 600;
+}
+.ms-logo img{
+  max-width: 175px;;
+}
+@media only screen and (max-width: 992px){
+  .ms-logo img{
+    left: auto;
+    transform: initial;
+    right: 0px;
+  }
+  .proj-title{
+    left:auto;
+    transform:initial;
+    margin-left: 55px;
+  }
+}

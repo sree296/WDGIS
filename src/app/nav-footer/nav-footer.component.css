@@ -1,0 +1,14 @@
+.page-footer .row{
+    margin-bottom: 0px;
+}
+footer{
+padding-top: 0px;
+padding-right: 35px;
+}
+.footer-about{
+    float: right;
+    display: inline-block;
+}
+.footer-about a{
+    color: #ffffff;
+}
