@@ -22,11 +22,13 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 import { ScanService } from './scan/scan.service';
+import { AdminComponent } from './admin/admin.component';
 
 //Define the routes
 const appRoutes: Routes = [
     { path: '', component: ScanComponent, pathMatch: 'full' },
-    { path: 'results', component: ResultsComponent }
+    { path: 'results', component: ResultsComponent },
+    { path: 'admin', component: AdminComponent }
 ]
 
 @NgModule({
@@ -35,7 +37,8 @@ const appRoutes: Routes = [
     NavMenuComponent,
     ScanComponent,
     NavFooterComponent,
-    ResultsComponent
+    ResultsComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
