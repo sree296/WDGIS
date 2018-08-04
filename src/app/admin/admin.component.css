@@ -30,7 +30,25 @@ i.large{
 .card h2{
     margin:1rem;
 }
-.top-scan-card .admin-total-scan h4{
-    margin-top: 0px;
-    color:#424242;
+.top-users-list{
+    display: flex;
+    justify-content: space-between;
+}
+.top-scan-card h5{
+    margin: 0px;
+    font-size: 1.25rem;
+}
+.top-users-list-title h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px;
+}
+.top-users-list i.large{
+    font-size: 1.5rem;
+}
+.top-users-list span{
+    top:-6px;
+}
+.red.accent-2, .top-users-list-title{
+    padding: 15px;
 }

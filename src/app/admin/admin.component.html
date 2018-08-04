@@ -3,10 +3,10 @@
     <div class="col s12 m6">
       <div class="card total-scan-card">
         <div class="card-content cyan center-align white-text">
-            <h5>
-              <i class="large material-icons group-icon">group</i>
-              <span>Total Scans</span>
-            </h5>
+          <h5>
+            <i class="large material-icons group-icon">group</i>
+            <span>Total Scans</span>
+          </h5>
           <h2>
             1024
           </h2>
@@ -14,21 +14,23 @@
         <div id="clients-bar" class="admin-total-scan center-align"> </div>
       </div>
     </div>
-    <div class="col s12 m6">
-        <div class="card top-scan-card">
-          <div class="card-content red accent-2 center-align white-text">
-              <h5>
-                <i class="large material-icons top-user">assignment_ind</i>
-                <span>Top User</span>
-              </h5>
-            <h2>
-              211
-            </h2>
+    <div class="col s12 m6 top-scan-card">
+        <div class="card">
+            <div class="card-content top-users-list-title blue-grey darken-1 center-align white-text">
+                <h5>Top Users</h5>
+            </div>
           </div>
-          <div id="clients-bar" class="admin-total-scan center-align"> 
-            <h4>Komal Kumar</h4>
+      <div class="card" *ngFor="let user of topUsers">
+        <div class="card-content red accent-2 center-align white-text">
+          <div class="top-users-list" >
+            <h5>
+              <i class="large material-icons top-user">assignment_ind</i>
+              <span>{{user.name}}</span>
+            </h5>
+            <h5>{{user.scanCount}}</h5>
           </div>
         </div>
       </div>
+    </div>
   </div>
 </section>
