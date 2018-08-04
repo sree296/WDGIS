@@ -38,3 +38,19 @@ mat-card {
     width: 50%;
     margin-left: 350px;    
 }
+form .header{
+    margin-top: 0px;
+}
+.scan-triger-msg{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.scan-triger-msg button{
+    background: #7fba00;
+    height: 50px;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
