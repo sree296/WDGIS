@@ -1,0 +1,36 @@
+.wdgis-wrapper >.row{
+    max-width: 1000px;
+}
+.wdgis-wrapper >.row .m6{
+    padding: 50px 25px;
+}
+i.large{
+    font-size: 2.5rem; 
+}
+.wdgis-wrapper i.group-icon{
+    background-color: #fff !important;
+    color:#00bcd4 !important;
+    border-radius: 50%;
+}
+.total-scan-card .admin-total-scan{
+    background-image: url(/assets/bar_chart.png); 
+}
+.admin-total-scan{
+    background-color: #fff;
+    padding: 10px 50px;
+    background-size:auto 60px; 
+    height: 65px;
+    margin: 10px 30px;
+}
+.card span{
+    position: relative;
+    top:-10px;
+    left:10px;
+}
+.card h2{
+    margin:1rem;
+}
+.top-scan-card .admin-total-scan h4{
+    margin-top: 0px;
+    color:#424242;
+}
