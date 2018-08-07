@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  //public adminUser = false;
+  public adminUser = true;
 }
