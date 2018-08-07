@@ -23,6 +23,7 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 import { ScanService } from './scan/scan.service';
 import { AdminComponent } from './admin/admin.component';
+import { ErrorComponent } from './error/error.component';
 
 //Define the routes
 const appRoutes: Routes = [
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     ScanComponent,
     NavFooterComponent,
     ResultsComponent,
-    AdminComponent
+    AdminComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
