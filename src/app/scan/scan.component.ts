@@ -9,8 +9,12 @@ import { ScanInfo } from './scan.info';
   styleUrls: ['./scan.component.css']
 })
 export class ScanComponent implements OnInit {  
-  environments : string[]
-  scanInfo = {}
+  environments : string[];
+  formSubmittedFlag = false;
+  scanInfo = {};
+  ipAddress: string;
+
+  scanEnv = "XBOX"; //selecting default value as  XBOX
 
   constructor(private api: ScanService) {
     this.environments = ["XBOX", "HVA", "CORE", "UST"]
@@ -24,6 +28,6 @@ export class ScanComponent implements OnInit {
   }
 
   submitScan(scanForm: NgForm) : void{
-    console.log(scanForm.value);
+    this.formSubmittedFlag  = true;
   } 
 }

@@ -54,3 +54,6 @@ form .header{
     font-size: 1.5rem;
     text-transform: capitalize;
 }
+.error-label{
+    color:#F44336;
+}
