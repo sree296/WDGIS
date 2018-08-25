@@ -2,6 +2,7 @@
   <div class="body-wrapper">
     <div class="form-container col s12 m7">
       <form #scanForm="ngForm" (ngSubmit)="submitScan(scanForm)">
+        <p>{{ipAddressControl.value == ""}}</p>
         <h4 class="header">On-Demand Qualys Scanning</h4>
         <div class="card horizontal">
           <div class="card-stacked">
@@ -17,7 +18,7 @@
                 <blockquote>Please Input IP Address / File upload</blockquote>
                 <div class="row input-field-row" [class.error-field]="ipAddressControl.invalid && ipAddressControl.touched">
                   <div class="input-field col s12 m9">
-                    <input id="ip_address" name="ipAddress" [(ngModel)]="ipAddress" #ipAddressControl="ngModel" type="text" class="validate" required>
+                    <input id="ip_address" name="ipAddress" [(ngModel)]="ipAddress" #ipAddressControl="ngModel" type="text" class="validate" [required]="ipAddressControl.value === '' && inputFileContorl.value === '' ">
                     <label for="ip_address">IP Address</label>
                   </div>
                   <div class="col s12 error-label" *ngIf="ipAddressControl.invalid && ipAddressControl.touched">
@@ -35,7 +36,8 @@
                         <span>
                           <i class="large material-icons">file_upload</i>
                         </span>
-                        <input name="uploadedFile" [(ngModel)]="uploadedFile" type="file" multiple>
+                        <input name="uploadedFile" [(ngModel)]="uploadedFile" type="file" #inputFileContorl="ngModel" multiple [required]="ipAddressControl.value === '' && inputFileContorl.value === ''">
+                        
                       </div>
                     </div>
                   </div>

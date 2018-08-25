@@ -12,7 +12,9 @@ export class ScanComponent implements OnInit {
   environments : string[];
   formSubmittedFlag = false;
   scanInfo = {};
-  ipAddress: string;
+  ipAddress = "" ;
+  uploadedFile = "";
+  
 
   scanEnv = "XBOX"; //selecting default value as  XBOX
 
