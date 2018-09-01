@@ -1,15 +1,4 @@
-/*!
- * Materialize v1.0.0-rc.2 (http://materializecss.com)
- * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
- */
- 
- /*!
- * Materialize v1.0.0-rc.2 (http://materializecss.com)
- * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
- */
- body {
+body {
     margin: 0px;
 }
 
@@ -53,18 +42,21 @@ nav ul li.active a{
 .ms-logo img{
   max-width: 175px;;
 }
-.nav-user-name{
-    background: transparent;
-    height: 75px;
-    font-weight: bold;
-    text-transform: capitalize;
+@media only screen and (min-width:992px){
+    .nav-user-name{
+        background: transparent;
+        height: 75px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .nav-user-name, .nav-user-name i.material-icons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+    }    
 }
-.nav-user-name, .nav-user-name i.material-icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
-}
+
 @media only screen and (max-width: 992px){
   .ms-logo img{
     left: auto;
@@ -76,4 +68,17 @@ nav ul li.active a{
     transform:initial;
     margin-left: 55px;
   }
+  .nav-user-name{
+    text-align: left;
+    padding-left: 10px;
+  }
+  .nav-user-name .material-icons{
+      margin-right:10px;
+      font-size: 1.6rem;
+  }
+}
+@media (min-width:993px) and (max-width:1200px){
+    nav .brand-logo.center{
+        left: 35%;
+    }
 }
