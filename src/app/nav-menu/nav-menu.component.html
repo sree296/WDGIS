@@ -11,9 +11,9 @@
              
               <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/"]'>Qualys Scan</a></li>
               <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/results"]'>Results</a></li>
-              <li  *ngIf="parentData" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/admin"]'>Admin</a></li>
+              <li  *ngIf="adminData" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/admin"]'>Admin</a></li>
               <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="">About</a></li>
-              <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a class="waves-effect waves-light btn nav-user-name"><i class="material-icons left">account_circle</i>Username</a></li>
+              <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a class="waves-effect waves-light btn nav-user-name"><i class="material-icons left">account_circle</i>{{userNameData}}</a></li>
             </ul>
           </div>
       </nav>
@@ -21,9 +21,9 @@
       <ul class="sidenav" id="mobile-demo">
         <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/"]'>Qualys Scan</a></li>
               <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/results"]'>Results</a></li>
-              <li  *ngIf="parentData" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/admin"]'>Admin</a></li>
+              <li  *ngIf="adminData" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="" [routerLink]='["/admin"]'>Admin</a></li>
               <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a href="">About</a></li>
-              <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a class="waves-effect waves-light btn nav-user-name"><i class="material-icons left">account_circle</i>Username</a></li>
+              <li  [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active"><a class="waves-effect waves-light btn nav-user-name"><i class="material-icons left">account_circle</i>{{userNameData}}</a></li>
       </ul>
     </div>
 </header>

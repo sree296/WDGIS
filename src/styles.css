@@ -1,7 +1,7 @@
 .wdgis-wrapper{
-    height:calc(100vh - 100px);
-    height:-moz-calc(100vh - 100px);
-    height:-webkit-calc(100vh - 100px);
+    min-height:calc(100vh - 100px);
+    min-height:-moz-calc(100vh - 100px);
+    min-height:-webkit-calc(100vh - 100px);
     width: 80%;
     margin:0 auto;
 }

@@ -1,6 +1,6 @@
 <section>
     <div *ngIf="validUser">
-        <app-nav-menu [parentData]="adminUser"></app-nav-menu>
+        <app-nav-menu [userNameData]="userName" [adminData]="adminUser"></app-nav-menu>
         <router-outlet></router-outlet>
         <app-nav-footer></app-nav-footer>
     </div>

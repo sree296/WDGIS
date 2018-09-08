@@ -11,4 +11,5 @@ export class AppComponent {
   validUser = true;
   //public adminUser = false;
   public adminUser = true;
+  public userName = 'Sreeni';
 }

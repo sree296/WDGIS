@@ -1,5 +1,6 @@
 .wdgis-wrapper >.row{
-    max-width: 1000px;
+    max-width: 90%;
+    margin:0 auto;
 }
 .wdgis-wrapper >.row .m6{
     padding: 50px 25px;
@@ -49,6 +50,37 @@ i.large{
 .top-users-list span{
     top:-6px;
 }
-.red.accent-2, .top-users-list-title{
+.red.accent-2, .white.accent-2, .top-users-list-title{
     padding: 15px;
+}
+
+.admin-env-selection{
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.admin-scan-type-content{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0px;
+}
+.card-content{
+    border-bottom:1px solid #ccc;
+}
+.admin-scan-type-content [type="checkbox"]+span {
+    padding-left: 25px;
+    width: 15%;
+    text-align: left;
+}
+.admin-scan-count{
+    padding:20px;
+}
+.admin-scan-count  .col{
+    padding-right: 20px;
+    padding-left: 0px;
+}
+.admin-scan-count .col.s8  .card-content{
+   display: inline-block;
+   padding: 0 5%;
 }

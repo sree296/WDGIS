@@ -45,7 +45,7 @@ nav ul li.active a{
 @media only screen and (min-width:992px){
     .nav-user-name{
         background: transparent;
-        height: 75px;
+        height: 66px;
         font-weight: bold;
         text-transform: capitalize;
     }

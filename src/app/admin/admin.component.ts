@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AdminComponent implements OnInit {
 
   topUsers : any[];
-
+  environments : string[];
   constructor() {
     this.topUsers = [
       {
@@ -31,7 +31,8 @@ export class AdminComponent implements OnInit {
         "name" : "David Siej",
         "scanCount" : 142
       }
-    ]
+    ];
+    this.environments = ["XBOX", "HVA", "CORE", "UST"];
    }
 
   ngOnInit() {
